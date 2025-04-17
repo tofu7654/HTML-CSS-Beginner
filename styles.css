@@ -1,0 +1,18 @@
+body{
+    background: salmon;
+    color: white;
+}
+
+#first-div{
+    background: moccasin;
+} 
+
+.paragraph{
+    color: black;
+    font-size: 1rem;
+}
+
+#google{
+    background: teal;
+    color: teal;
+}

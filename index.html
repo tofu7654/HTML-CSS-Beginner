@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cats Galore</title> 
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <header>
-        <h1 style="color: wheat; background: black;">Cat's Corner</h1>
-        <nav style="color: blue; background: yellow;">
+    <header id="google">
+        <h1 style="color: white;">Cat's Corner</h1>
+        <nav>
             <a href="#footer">
                 <p>Footer</p>
             </a>
@@ -21,12 +22,12 @@
         <section>
             <h2>Everything you should know about cats!</h2>
         
-            <p>Cat's gotta be the coolest animals ever, that's 
+            <p class="paragraph header">Cat's gotta be the coolest animals ever, that's 
             why I'm making this website.</p>
         </section>
         
         <section>
-            <div>
+            <div id="first-div">
                 <img style="width: 30%" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALcAwwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAECBAYDBwj/xAA+EAACAQMCAwYEAwYEBgMAAAABAgMABBEFIRIxQQYTUWFxgRQiMpFSobEjQmLB0fAVkuHxFjNTcoKiJEPi/8QAGgEAAwEBAQEAAAAAAAAAAAAAAQIDAAQFBv/EACQRAAICAgEFAQADAQAAAAAAAAABAhEDEiEEEzFBUSIyUmEU/9oADAMBAAIRAxEAPwD1qmNKlXQTFmmpGmFYw5qNSNRrGFSNI0xogETUTSpjWRiJNQJqRNQNMjESa5tuCPKuhNcJ34QR5UTGZ1y24yW8KGC6NrAQDjai+pygnBoBqMZljKryrgyyi5cnRikoqmYztBrkss3cRsck42oj2d0fvFSSTLMepoVdaYV1FGPjW/7OW4CLnlikm4+mWuylfaYUhIAxtWVutPfiOa9Qv0i7kVlLwIHbFJ275NsYz/C5JHCge9HNI7Kd5KsjscjwpC4SCUseVX4O1MVq68Iz0qOZzivyGjWWeni2hzkkedBtaZeS8s0Xs9SN7bMQMcS5rP6ixa5CnxottYefI0OZlThpV2UYFNXm0ddHs1NTGlX1B4gjSpdKQrGGNR6U7UwrGImlTtzpqIBqY05qNYxBudMadudQpzDNVeYZGKskbVwcZIAGT0oMxm9Wh4WLE4A5mhVva
                 POhYusUP/UkOB+m5rUXNs0khEaCSQb/ADn5V/rVY6ZNI4MzGRvAjl6CuPLg7sh1D6ZjVOz7i0N5Z3Im7r55EaLh4lHPhOdzjfB54ptP1OKBAOIYxkYOa3UlsILdTjhUYyPLNeHag86M8dv+6So9AcVN4NZpFN9UbDU+0SFSoas7cawhBGck0ANnqUw+vhzTw6Lf95l5MjwqstVwNFy+BFYJL6TEZI9KWoaY0EY3bzo1pFm9tGC65NV9Tu+8uY4sYyaEFD6Wf8TTaFKY7BVOfp6+lD5347lvI4orYwkWK4GTih3wMzSsQMb1y9WndIfp2vLGB2pV3FhPSrg7M/h0bx+nrdKkKY19EeMPSJpqRrGImmFJudNRMJqbpSNLGRWANiljauNxdxQY72qUt8ZWxByz15Urml5GUWy7IyJ9RAPnTM8YXi4lA8c1ntWumRSWU7D6ulBINTFxIIjN8pPCQen+lL3RtDcJcJKSsbhyBzzyqaJIsZkl4eHOBgg/pWd0BSfilJb5Xxnx5/370QUTW87xszNGRnJ/Sl7jkUUUi40ZtmVxsuc58M1ZMuBhhnqNuY8RXBJwVKPgeGOlQiUrJwqcLniAqqYjRV1ydYLNiOYBYb+AzXmthpXxJ7xhniOa0na/U1aRbdG/5j8HtzP8vvSsZYYLTizk4rlySbm6KQguEzlFpUMaAFR71M2UA/dWs9rXaYW8hAzz6UHk7X4/F9q454pydnTHJFI3D2sCqdlFCX0iKa6RlAO/Sswnal5j8iOcHoK0fZu/ll4ZJFYAk86bFhltyDJkjrwaCBFtYQrDFQkuYV2AyahfXiOhVeeKzk95IkuKbL1EYTo2ODcDUC6XA+WlWY+OkpUv/ZH4HsM9qpZ2pqRr1DzhZpqamzWMJjvTCnz5+1Md+Qw360TCbYZofqN/8LHxA7+GOdXZmCphtuvpWI7Q3E8lwIY/nDbedTyS1HhGznd60Tep3gC5O2TtVuXW44Iwe9HFyPCuaIpoFstrbSvE88wGcHocdaF3XdSW1yZrJVkiOAPyz51ztpl6Kn+M2V9J3L3LIzHh35Zp49Ps7Iu/fCWXdgzLvkb4/nQm+7PC/tQbQ8F0pDFh5bj0wRijOi6dNNHi+YpIyj9kepGOR60LXg1FuyvwZXCkqAQ3GNsnp+f61a/xP5CsrFir5Pj6/cUH1h5LCM9xguo2J5qQNs++N6H2+s2zXCQ3EbEE4xy4QCc7cskjryA9KwDX/HwtD8TE3EMk4HMY/sVnNQ7UvwdzZEcTH5GPT++tcrhZLeEtblJRI2GK59yScH8hyrPa5pNw8DwaUoME5/aohYyY6rjwPWn2dGVBPTVt9Tn40kMoi+USfj8T981Y1OF1jKR9Nqwmk6qNEumSJj3Yc5rYNrMV1CHyDkdKZ8RQsY/pgS40ky5LczVP/AkDfOQPWiN5q8aA0CvNdUghM58qSynAUgtLWJ1GVJzR65uIbSxypAIHSsPo8lzqF6r
                 nPdoetG+0b/D2DqTj5dhVYw/NkpT5oWjak95cTDORnFWNQPBOPSgHYo/tH3yS2a0msrh0NeP1CqZ6GFtxKiboDSrgr7U1RpD2z6BpGkKVfRnjDVE1ImoZrGJAUxFIGmLhQc4wN96JitfSK8JRtv4h0rKXltKt8WQcUyqGH4ZF8QfGj+oy95BI8fDJwjfoRWT0nVma8lspeIjmqtuD6GuTI7lR0QVRsP2p1GKWCV5uOA5YxgbEYoPNeC6llldwqTIxG+cqORHmM/pR/UkuV0hHtSouEYFGPJyOnvWCu7r4ZlWe24VMpMkT/SGPML686VqnQbvk6Wusvp2k3TwAyXjXXcRKRtxkbZ8sb+lR1PTZE0x72XXL251SH537hh8h544R+n9ao/s5dTe4CARQSxzsQduHDIX58gGU+goDLoOvW19dDvpI2kk4yyn5W3OCDnz+9aEsak+4DJvS0NfpE3/EmnWszzDckSyAAD5T08vXlnHSuOv9oNEsm+Dtlj44U4RIB82cbn1x/Op9n+zN/B2IntIGMFxLIxVxsd9sfqKa07BaFp1sbjU5DdSYLPI+eH2xzplJegtNnG216yXTmkDSLbxn9mrgYXnnGNvD7dKCz2epa5eR3sKC1sRuJO8+ZgPqPD0zRHvrbVFktdOlt7HR7baWeRBxN0wBipXt5BPBDY6NFI1lGhDShOESn18PIc6aPIvgyerg/HtK8SR24xEjL1K1Y08pcsscTFcnHCehqxfacIYwdQlWG2DYUIN98Zx5+fTFVLm1WLUcabIzWzEFXYY9qNAsMTdlp5ATniqjL2blU4MW/StfomoskaRXsZViOfj50bjWGeTYqapSZrZk+zekC0i4imD/ADoX2pt2uX7vhODywK9QMcccWPloZd2MMqFiFNVbWtURjG5XZ5v2asmguTsR13FHNVBITNForCKOclVG46UO1hcbYxivH62FNHp9M7QFC7UqmRvSrgs6KPe802abNMedfTUeISJqBx1qVROBuc1jDqAeRA9RQbX7t4rZkjZeLGw4hk/eumuamLGzeRDHxAZCsedYA9pJNZc8VuoIO5BbH34hSZHQ8Ymk0MytHM0hkR8f9Mj8z/KhthJaXOv9w6lLgNkSRj6vUfzFU9P1iTT70YjSNXOMrcf1Y0cV4E1qC8lWFsEbsFYj3wD+tczXNlUau97hI1szkJNvE7j5eP8AsfrWQvJYNVEkF3C0c0OVbbGGHXP2P2orri3FxHNb2hR5oZFuLcyKeQ3x5nahllpM51G91SIIIbtFkETqeMSAYOc+w9qWTaHgrBelWVpo2pXF88qSgoVMbnpzx/f86j2Tiude1Dj02/urXSYpCGtg2B5qpIyB5CqF9D8XMSlmGiMpDsVbDkZB6+VaXRVh060VLeCODb6E/pU+GyjtIvdr7pUt4rO1KpGpw7HJCj8s/pWN16RNQto7d2Z0TJyWPME7cht96sazqYM4ZpVUZ4S64wfTHPFC7bUbSBo0CMzkD5
@@ -41,7 +42,7 @@
                 <form>
                     <label>
                         <p>Cat breed</p>
-                        <input style="width: 240px" placeholder="Enter the name of favorite cat name"/>
+                        <input style="width: 240px" placeholder="Enter the name of favorite cat..."/>
                     </label>
                     <button>
                         <p>Submit</p>
